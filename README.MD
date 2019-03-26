@@ -2,7 +2,7 @@
 
 My personal terminal setup
 
-**For the Shell:**
+![Screenshot](https://github.com/kdbaustert/personal-termial-setup/blob/master/screenshot/ScreenShot.png)
 
 # Packages
 
