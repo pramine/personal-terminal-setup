@@ -14,7 +14,7 @@ My personal terminal setup
 
 ### [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
 
-### [Powerlevel9k](https://github.com/bhilburn/powerlevel9k)
+### [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 # Font
 
