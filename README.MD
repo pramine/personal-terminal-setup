@@ -88,6 +88,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status laravel_version node_version ram)
 
 ```
 # Common aliases
+alias fixdb='mkdir /usr/local/etc/my.cnf.d/'
 alias zshconfig='code ~/.zshrc'
 alias zprezconfig='code ~/.zpreztorc'
 alias vscustom='code ~/.vscode-custom.css'
@@ -100,10 +101,8 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
 alias myip='curl http://ipecho.net/plain; echo'
-alias webpacktemp='git clone https://github.com/kdbaustert/webpack4-bolierplate.git'
-alias wordpresstemp='git clone https://github.com/kdbaustert/wordpress-template-boilerplate.git'
-alias brewry='brew update; brew upgrade; brew cleanup; brew doctor'
 alias wget='wget -c'
+alias installvaletplus='valet install --with-mariadb'
 
 # Directories
 alias root='cd /'
@@ -121,7 +120,10 @@ alias copypret='cp ~/Dropbox/Codeconfigs/.prettierrc .'
 # SSH
 alias sshconfig='cd ~/.ssh; code config'
 alias sshkeygen='ssh-keygen -t rsa'
-alias copysshid='ssh-copy-id -i ~/.ssh/id_rsa.pub'
+alias copyssh='ssh-copy-id -i ~/.ssh/id_rsa.pub'
+alias fixssh1='sudo chmod 600 ~/.ssh/id_rsa.pub'
+alias fixssh2='sudo chmod 600 ~/.ssh/id_rsa'
+alias killssh='killall ssh'
 
 ## Removed other ssh info
 
@@ -201,4 +203,9 @@ alias vl='valet link'
 alias vul='valet unlink'
 alias vs='valet secure'
 alias vsh='valet share'
+
+# Brew
+alias brewupdate='brew update; brew upgrade; brew cleanup; brew doctor'
+alias brewservicesall='brew services restart --all'
+alias brewclean='brew cleanup'
 ```
