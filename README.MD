@@ -27,12 +27,20 @@ My personal terminal setup
 # Settings
 
 ```
-POWERLEVEL9K_MODE="nerdfont-complete"
+export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+
+PROMPT_EOL_MARK=""
+
+# Customize to your needs...
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Customize to your needs...
 # POWERLEVEL9K_VCS_SHORTEN_LENGTH=4
